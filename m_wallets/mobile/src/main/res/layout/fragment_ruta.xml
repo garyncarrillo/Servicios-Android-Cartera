@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Fragmento_Ruta_xml"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RutaFragment"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/TextDocumento"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:ems="10"
+                android:enabled="true"
+                android:hint="Documento"
+                android:inputType="number"
+                android:textColor="@color/colorPrimary"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/Flot_Buscar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:clickable="true"
+                    android:src="@android:drawable/ic_input_add" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/textNombres"
+                        android:layout_width="match_parent"
+                        android:layout_height="43dp"
+                        android:enabled="false"
+                        android:hint="Nombres" />
+
+                    <Spinner
+                        android:id="@+id/spinner_Tipo_Credito"
+                        android:layout_width="match_parent"
+                        android:layout_height="61dp"
+                        android:hint="Tipo Credito" />
+
+                    <Spinner
+                        android:id="@+id/spinner_Intereses"
+                        android:layout_width="match_parent"
+                        android:layout_height="61dp"
+                        android:hint="Intereses" />
+
+                    <EditText
+                        android:id="@+id/editText"
+                        android:layout_width="match_parent"
+                        android:layout_height="61dp"
+                        android:ems="10"
+                        android:hint="Valor Credito"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/editText2"
+                        android:layout_width="match_parent"
+                        android:layout_height="61dp"
+                        android:ems="10"
+                        android:hint="Numero Cuotas"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/textFecha_Inicial"
+                        android:layout_width="match_parent"
+                        android:layout_height="61dp"
+                        android:hint="Fecha Inicial"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/textFecha_Final"
+                        android:layout_width="match_parent"
+                        android:layout_height="61dp"
+                        android:hint="Fecha Final"
+                        android:inputType="number" />
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Grabar" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
